@@ -47,6 +47,7 @@ public class OrderController {
 	@GetMapping("/ppp/{pid}")
 	public List<Product> getproduct(@PathVariable ("pid") int pid)
 	{
+		System.out.println("git demo");
 		return productRepository.findAllByPid(pid);
 		
 	}
